@@ -2,19 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ObservableComponent } from './components/observables/observable/observable.component';
-import { UnsubscribeAddComponent } from './components/observables/unsubscribe-add/unsubscribe-add.component';
+import { AppComponent } from './app.component'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ObservableComponent,
-    UnsubscribeAddComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
