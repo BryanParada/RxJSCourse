@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'; 
-import { Observable, Observer } from 'rxjs';
+import { Observable, Observer, Subscriber } from 'rxjs';
 
 
 
@@ -39,6 +39,10 @@ export class UnsubscribeAddComponent implements OnInit {
           console.log('num in interval is: ',num);
           
       }, 1000);
+
+      setTimeout(() =>{
+        subs.complete();
+      }, 2500);
     
       return () =>{
           clearInterval(interval);
@@ -51,11 +55,14 @@ export class UnsubscribeAddComponent implements OnInit {
     const subscription1 = insterval$.subscribe( num => console.log('Num:', num) );
     const subscription2 = insterval$.subscribe( num => console.log('Num:', num) );
     const subscription3 = insterval$.subscribe( num => console.log('Num:', num) );
+
+    subscription1.add( subscription2) 
+    subscription2.add( subscription3);
     
     setTimeout(() =>{
-      subscription1.unsubscribe()
-      subscription2.unsubscribe()
-      subscription3.unsubscribe()
+      // subscription1.unsubscribe()
+      // subscription2.unsubscribe()
+      // subscription3.unsubscribe()
     
       console.log('Time out Completed');
       
