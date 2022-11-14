@@ -1,14 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap');
 
-*, html, body {
-    font-family: 'Roboto', sans-serif;
-    color: white;
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.spacer {
+    flex: 1 1 auto;
 }
 
-body{
+.red-icon{
+    color: rgb(189, 2, 2);
+}
+
+.buttonSize{
+    padding: 0 45px !important;  
+}
+
+ 
+
+/* *, html, body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+} */
+
+/* body{
     text-align: center !important;
     background-color: #18202F;
-}
+} */
 
 h1 {
     font-weight: lighter;
@@ -91,3 +111,6 @@ ol {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

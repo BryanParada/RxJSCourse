@@ -2,15 +2,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ObservableComponent } from '../observables/observable/observable.component';
 import { UnsubscribeAddComponent } from '../observables/unsubscribe-add/unsubscribe-add.component';
+import { HomeComponent } from '../home/home.component';
 
 const routes: Routes = [
   {
     path:'',
+    component: HomeComponent,
     children:
-       [
+       [ 
          { path:'observable', component: ObservableComponent},
          { path:'unsubscribe', component: UnsubscribeAddComponent},
-         { path:'**', redirectTo: 'observable'},
+         { path:'**', redirectTo: 'home'},
        ]
   }
 ];
