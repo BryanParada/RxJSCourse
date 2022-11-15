@@ -20,7 +20,8 @@ export class HomeComponent implements OnInit {
 
   menu: menuItem[] = [
     {route: '/rxJS/observable', text: 'Observable' }, 
-    {route: '/rxJS/unsubscribe', text: 'Unsubscribe Add' } 
+    {route: '/rxJS/unsubscribe', text: 'Unsubscribe Add' }, 
+    {route: '/rxJS/subject', text: 'Subject' } 
     
   ];
 
