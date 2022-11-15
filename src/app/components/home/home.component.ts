@@ -25,7 +25,8 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/of', text: 'Of' },
     {route: '/rxJS/fromEvent', text: 'fromEvent' },
     {route: '/rxJS/range', text: 'range' },
-    {route: '/rxJS/interval-timer', text: 'intervalTimer' },
+    {route: '/rxJS/interval-timer', text: 'interval Timer' },
+    {route: '/rxJS/async-scheduler', text: 'async Scheduler' },
     
   ];
 

@@ -8,7 +8,8 @@ import { SubjectComponent } from './components/observables/subject/subject.compo
 import { OfComponent } from './components/observables/of/of.component';
 import { FromEventComponent } from './components/observables/from-event/from-event.component';
 import { RangeComponent } from './components/observables/range/range.component';
-import { IntervalTimerComponent } from './components/observables/interval-timer/interval-timer.component'; 
+import { IntervalTimerComponent } from './components/observables/interval-timer/interval-timer.component';
+import { AsyncSchedulerComponent } from './components/observables/async-scheduler/async-scheduler.component'; 
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { IntervalTimerComponent } from './components/observables/interval-timer/
     OfComponent,
     FromEventComponent,
     RangeComponent,
-    IntervalTimerComponent
+    IntervalTimerComponent,
+    AsyncSchedulerComponent
   ],
   imports: [
     BrowserModule,
