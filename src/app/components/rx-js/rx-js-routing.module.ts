@@ -4,6 +4,7 @@ import { ObservableComponent } from '../observables/observable/observable.compon
 import { UnsubscribeAddComponent } from '../observables/unsubscribe-add/unsubscribe-add.component';
 import { HomeComponent } from '../home/home.component';
 import { SubjectComponent } from '../observables/subject/subject.component';
+import { OfComponent } from '../observables/of/of.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
          { path:'observable', component: ObservableComponent},
          { path:'unsubscribe', component: UnsubscribeAddComponent},
          { path:'subject', component: SubjectComponent},
+         { path:'of', component: OfComponent},
          { path:'**', redirectTo: 'home'},
        ]
   }

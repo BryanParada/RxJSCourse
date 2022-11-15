@@ -4,13 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SubjectComponent } from './components/observables/subject/subject.component'; 
+import { SubjectComponent } from './components/observables/subject/subject.component';
+import { OfComponent } from './components/observables/of/of.component'; 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SubjectComponent
+    SubjectComponent,
+    OfComponent
   ],
   imports: [
     BrowserModule,
