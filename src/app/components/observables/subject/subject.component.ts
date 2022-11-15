@@ -32,7 +32,11 @@ export class SubjectComponent implements OnInit {
         () => subs.next( Math.random() ), 1000
         );
 
-        return () => clearInterval( intervalID );
+        return () => {
+          clearInterval( intervalID )
+          console.log('Interval Destroyed!');
+          
+        };
 
     });
 
@@ -41,14 +45,27 @@ export class SubjectComponent implements OnInit {
     // 3- maneja next, error y complete
 
     const subject$ = new Subject();
-    intervalo$.subscribe( subject$ );
+    const subscription = intervalo$.subscribe( subject$ );
 
-    const subs1 = intervalo$.subscribe( rnd => console.log('subs1 without subject', rnd) );
-    const subs2 = intervalo$.subscribe( rnd => console.log('subs2 without subject', rnd) );
+    //const subs1 = intervalo$.subscribe( rnd => console.log('subs1 without subject', rnd) );
+    //const subs2 = intervalo$.subscribe( rnd => console.log('subs2 without subject', rnd) );
 
-    const subsSubj1 = subject$.subscribe( rnd => console.log('subs1 with subject', rnd) );
-    const subsSubj2 = subject$.subscribe( rnd => console.log('subs2 with subject', rnd) );
+    // const subsSubj1 = subject$.subscribe( rnd => console.log('subs1 with subject', rnd) );
+    // const subsSubj2 = subject$.subscribe( rnd => console.log('subs2 with subject', rnd) );
 
+    const subsSubj1 = subject$.subscribe( observer );
+    const subsSubj2 = subject$.subscribe( observer );
+
+    setTimeout( () => {
+
+      subject$.next(10);
+
+      subject$.complete();
+
+      //llamara el return del observable (interval destroyed)
+      subscription.unsubscribe();
+
+    }, 3500)
 
 
    }
