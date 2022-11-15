@@ -6,6 +6,7 @@ import { HomeComponent } from '../home/home.component';
 import { SubjectComponent } from '../observables/subject/subject.component';
 import { OfComponent } from '../observables/of/of.component';
 import { FromEventComponent } from '../observables/from-event/from-event.component';
+import { RangeComponent } from '../observables/range/range.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
          { path:'subject', component: SubjectComponent},
          { path:'of', component: OfComponent},
          { path:'fromEvent', component: FromEventComponent},
+         { path:'range', component: RangeComponent},
          { path:'**', redirectTo: 'home'},
        ]
   }

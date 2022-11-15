@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/subject', text: 'Subject' }, 
     {route: '/rxJS/of', text: 'Of' },
     {route: '/rxJS/fromEvent', text: 'fromEvent' },
+    {route: '/rxJS/range', text: 'range' },
     
   ];
 
