@@ -9,7 +9,8 @@ import { OfComponent } from './components/observables/of/of.component';
 import { FromEventComponent } from './components/observables/from-event/from-event.component';
 import { RangeComponent } from './components/observables/range/range.component';
 import { IntervalTimerComponent } from './components/observables/interval-timer/interval-timer.component';
-import { AsyncSchedulerComponent } from './components/observables/async-scheduler/async-scheduler.component'; 
+import { AsyncSchedulerComponent } from './components/observables/async-scheduler/async-scheduler.component';
+import { AdvancedFromComponent } from './components/observables/advanced-from/advanced-from.component'; 
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { AsyncSchedulerComponent } from './components/observables/async-schedule
     FromEventComponent,
     RangeComponent,
     IntervalTimerComponent,
-    AsyncSchedulerComponent
+    AsyncSchedulerComponent,
+    AdvancedFromComponent
   ],
   imports: [
     BrowserModule,
