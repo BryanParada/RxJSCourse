@@ -22,7 +22,8 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/observable', text: 'Observable' }, 
     {route: '/rxJS/unsubscribe', text: 'Unsubscribe Add' }, 
     {route: '/rxJS/subject', text: 'Subject' }, 
-    {route: '/rxJS/of', text: 'Of' } 
+    {route: '/rxJS/of', text: 'Of' },
+    {route: '/rxJS/fromEvent', text: 'fromEvent' },
     
   ];
 

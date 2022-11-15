@@ -5,6 +5,7 @@ import { UnsubscribeAddComponent } from '../observables/unsubscribe-add/unsubscr
 import { HomeComponent } from '../home/home.component';
 import { SubjectComponent } from '../observables/subject/subject.component';
 import { OfComponent } from '../observables/of/of.component';
+import { FromEventComponent } from '../observables/from-event/from-event.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,7 @@ const routes: Routes = [
          { path:'unsubscribe', component: UnsubscribeAddComponent},
          { path:'subject', component: SubjectComponent},
          { path:'of', component: OfComponent},
+         { path:'fromEvent', component: FromEventComponent},
          { path:'**', redirectTo: 'home'},
        ]
   }
