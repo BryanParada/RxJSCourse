@@ -7,6 +7,7 @@ import { SubjectComponent } from '../observables/subject/subject.component';
 import { OfComponent } from '../observables/of/of.component';
 import { FromEventComponent } from '../observables/from-event/from-event.component';
 import { RangeComponent } from '../observables/range/range.component';
+import { IntervalTimerComponent } from '../observables/interval-timer/interval-timer.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
          { path:'of', component: OfComponent},
          { path:'fromEvent', component: FromEventComponent},
          { path:'range', component: RangeComponent},
+         { path:'interval-timer', component: IntervalTimerComponent},
          { path:'**', redirectTo: 'home'},
        ]
   }
