@@ -1,6 +1,5 @@
  
-
-<mat-sidenav-container fullscreen>
+  <mat-sidenav-container fullscreen>
     <mat-sidenav #sidenav mode="push"> 
        
         <mat-toolbar color="primary">
@@ -15,10 +14,19 @@
         </mat-toolbar>
 
         <mat-nav-list >
-            <a *ngFor="let item of menu"
+            <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Observables</span>
+				<mat-icon mat-list-icon>search</mat-icon>
+                <mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon> 
+             </mat-list-item>
+
+
+        <div class="submenu" [ngClass]="{'expanded' : showSubmenu}" *ngIf="isShowing || isExpanded">
+            <a *ngFor="let item of menuObservables"
             mat-list-item  
             [routerLink]="item.route" 
-            (click)="sidenav.toggle()"> {{item.text}}</a>
+            (click)="sidenav.toggle()"> {{item.text}}</a> 
+        </div>
  
         </mat-nav-list>
 
@@ -46,7 +54,6 @@
     <router-outlet></router-outlet>
 </div>
 
-</mat-sidenav-container>
-
+</mat-sidenav-container> 
 
  

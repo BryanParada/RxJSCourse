@@ -15,7 +15,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatListModule} from '@angular/material/list'; 
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'; 
 import {MatSelectModule} from '@angular/material/select'; 
-import {MatSnackBarModule} from '@angular/material/snack-bar'; 
+import {MatSnackBarModule} from '@angular/material/snack-bar';  
 
 @NgModule({
   declarations: [], 
