@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fromEvent, range } from "rxjs";
-import { map, pluck } from "rxjs/operators";
+import { map, mapTo, pluck } from "rxjs/operators";
 
 @Component({
   selector: 'app-map-pluck',
@@ -47,8 +47,13 @@ export class MapPluckComponent implements OnInit {
         pluck('target', 'baseURI')
     );
 
+    const keupMapTo$ = keyup$.pipe(
+      mapTo('pressed key')
+  );
+
     keyupCode$.subscribe( code => console.log('map ', code)  );
     keupPluck$.subscribe( code => console.log('pluck ', code)  );
+    keupMapTo$.subscribe( code => console.log('map ', code)  );
 
     
 
