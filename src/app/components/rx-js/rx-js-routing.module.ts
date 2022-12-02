@@ -12,6 +12,7 @@ import { AsyncSchedulerComponent } from '../observables/async-scheduler/async-sc
 import { AdvancedFromComponent } from '../observables/advanced-from/advanced-from.component';
 import { MapPluckComponent } from '../operators/map-pluck/map-pluck.component';
 import { FilterComponent } from '../operators/filter/filter.component';
+import { TapComponent } from '../operators/tap/tap.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
     component: HomeComponent,
     children:
        [ 
+        //OBSERVABLES
          { path:'observable', component: ObservableComponent},
          { path:'unsubscribe', component: UnsubscribeAddComponent},
          { path:'subject', component: SubjectComponent},
@@ -28,9 +30,10 @@ const routes: Routes = [
          { path:'interval-timer', component: IntervalTimerComponent},
          { path:'async-scheduler', component: AsyncSchedulerComponent},
          { path:'advanced-from', component: AdvancedFromComponent},
-
+        //OPERADORES
          { path:'map-pluck', component: MapPluckComponent},
          { path:'filter', component: FilterComponent},
+         { path:'tap', component: TapComponent},
 
          { path:'**', redirectTo: 'home'},
        ]

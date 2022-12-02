@@ -32,6 +32,7 @@ export class HomeComponent implements OnInit {
 
     {route: '/rxJS/map-pluck', text: 'Map Pluck MapTo' },
     {route: '/rxJS/filter', text: 'Filter' },
+    {route: '/rxJS/tap', text: 'Tap' },
     
   ];
 
