@@ -29,8 +29,9 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/interval-timer', text: 'interval Timer' },
     {route: '/rxJS/async-scheduler', text: 'async Scheduler' },
     {route: '/rxJS/advanced-from', text: 'Advanced From' },
+
     {route: '/rxJS/map-pluck', text: 'Map Pluck MapTo' },
-   
+    {route: '/rxJS/filter', text: 'Filter' },
     
   ];
 

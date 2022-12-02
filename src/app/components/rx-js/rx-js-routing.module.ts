@@ -11,6 +11,7 @@ import { IntervalTimerComponent } from '../observables/interval-timer/interval-t
 import { AsyncSchedulerComponent } from '../observables/async-scheduler/async-scheduler.component';
 import { AdvancedFromComponent } from '../observables/advanced-from/advanced-from.component';
 import { MapPluckComponent } from '../operators/map-pluck/map-pluck.component';
+import { FilterComponent } from '../operators/filter/filter.component';
 
 const routes: Routes = [
   {
@@ -27,7 +28,9 @@ const routes: Routes = [
          { path:'interval-timer', component: IntervalTimerComponent},
          { path:'async-scheduler', component: AsyncSchedulerComponent},
          { path:'advanced-from', component: AdvancedFromComponent},
+
          { path:'map-pluck', component: MapPluckComponent},
+         { path:'filter', component: FilterComponent},
 
          { path:'**', redirectTo: 'home'},
        ]

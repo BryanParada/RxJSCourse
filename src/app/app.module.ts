@@ -11,7 +11,8 @@ import { RangeComponent } from './components/observables/range/range.component';
 import { IntervalTimerComponent } from './components/observables/interval-timer/interval-timer.component';
 import { AsyncSchedulerComponent } from './components/observables/async-scheduler/async-scheduler.component';
 import { AdvancedFromComponent } from './components/observables/advanced-from/advanced-from.component';
-import { MapPluckComponent } from './components/operators/map-pluck/map-pluck.component'; 
+import { MapPluckComponent } from './components/operators/map-pluck/map-pluck.component';
+import { FilterComponent } from './components/operators/filter/filter.component'; 
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { MapPluckComponent } from './components/operators/map-pluck/map-pluck.co
     IntervalTimerComponent,
     AsyncSchedulerComponent,
     AdvancedFromComponent,
-    MapPluckComponent
+    MapPluckComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
