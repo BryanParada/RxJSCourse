@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { from, range } from "rxjs";
-import { filter } from "rxjs/operators";
+import { from, fromEvent, range } from "rxjs";
+import { filter, map } from "rxjs/operators";
 
 @Component({
   selector: 'app-filter',
@@ -51,11 +51,19 @@ export class FilterComponent implements OnInit {
         }
       ];
 
+      //muestra todos los heroes de un array
       from(characters).pipe(
         filter( p => p.type === 'hero')
       )
       .subscribe(console.log)
 
+        //ENCADENAMIENTO DE OPERADORES
+      const keyup$ = fromEvent<KeyboardEvent>(document, 'keyup').pipe(
+        map( event => event.code), //recibe keyboardEvent, sale un string (si cambiamos el orden de map y filter tendremos problemas)
+        filter( key => key === 'Enter') //recibe string, sale un string
+      )
+
+      keyup$.subscribe(console.log);
 
 
 
