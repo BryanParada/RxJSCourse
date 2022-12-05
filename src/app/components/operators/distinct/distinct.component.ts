@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'; 
-import { from, distinctUntilChanged, distinct, of } from 'rxjs';
+import { from, distinctUntilChanged, distinct, distinctUntilKeyChanged, of } from 'rxjs';
 
 @Component({
   selector: 'app-distinct',
@@ -26,7 +26,8 @@ export class DistinctComponent implements OnInit {
       numbers$.pipe(
         distinct() //evita repetir valores - dejara pasar valores que ya hayan sido emitidos
       ).subscribe(console.log); 
-        console.log('-------');
+
+      console.log('-------');
         
       numbers$.pipe(
         distinctUntilChanged() //solo evita repetir valores seguidos, ej 1,1,1 = 1 - pero si 1,'1',1 = 1,'1',1
@@ -48,7 +49,8 @@ export class DistinctComponent implements OnInit {
 
       from( characters).pipe(
         //distinct( p => p.name)
-        distinctUntilChanged( (ant, act) => ant.name === act.name)
+        //distinctUntilChanged( (ant, act) => ant.name === act.name)
+        distinctUntilKeyChanged('name')
       ).subscribe(console.log)
 
 
