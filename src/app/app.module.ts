@@ -24,7 +24,8 @@ import { TakeUntilComponent } from './components/operators/take-until/take-until
 import { DistinctComponent } from './components/operators/distinct/distinct.component';
 import { DebounceTimeComponent } from './components/operatorsTime/debounce-time/debounce-time.component';
 import { ThrottleTimeComponent } from './components/operatorsTime/throttle-time/throttle-time.component';
-import { SampleTimeComponent } from './components/operatorsTime/sample-time/sample-time.component'; 
+import { SampleTimeComponent } from './components/operatorsTime/sample-time/sample-time.component';
+import { SampleComponent } from './components/operatorsTime/sample/sample.component'; 
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { SampleTimeComponent } from './components/operatorsTime/sample-time/samp
     DistinctComponent,
     DebounceTimeComponent,
     ThrottleTimeComponent,
-    SampleTimeComponent
+    SampleTimeComponent,
+    SampleComponent
   ],
   imports: [
     BrowserModule,
