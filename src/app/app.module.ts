@@ -16,7 +16,8 @@ import { FilterComponent } from './components/operators/filter/filter.component'
 import { TapComponent } from './components/operators/tap/tap.component';
 import { MapLabComponent } from './components/operators/map-lab/map-lab.component';
 import { ReduceComponent } from './components/operators/reduce/reduce.component';
-import { ScanComponent } from './components/operators/scan/scan.component'; 
+import { ScanComponent } from './components/operators/scan/scan.component';
+import { TakeComponent } from './components/operators/take/take.component'; 
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ScanComponent } from './components/operators/scan/scan.component';
     TapComponent,
     MapLabComponent,
     ReduceComponent,
-    ScanComponent
+    ScanComponent,
+    TakeComponent
   ],
   imports: [
     BrowserModule,

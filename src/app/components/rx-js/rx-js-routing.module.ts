@@ -16,6 +16,7 @@ import { TapComponent } from '../operators/tap/tap.component';
 import { MapLabComponent } from '../operators/map-lab/map-lab.component';
 import { ReduceComponent } from '../operators/reduce/reduce.component';
 import { ScanComponent } from '../operators/scan/scan.component';
+import { TakeComponent } from '../operators/take/take.component';
 
 const routes: Routes = [
   {
@@ -39,7 +40,8 @@ const routes: Routes = [
          { path:'tap', component: TapComponent},
          { path:'map-lab', component: MapLabComponent},
          { path:'reduce', component: ReduceComponent},
-         { path:'scan', component: ScanComponent},
+         { path:'scan', component: ScanComponent}, 
+         { path:'take', component: TakeComponent}, 
 
          { path:'**', redirectTo: 'home'},
        ]
