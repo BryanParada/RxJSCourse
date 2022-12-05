@@ -15,7 +15,8 @@ import { MapPluckComponent } from './components/operators/map-pluck/map-pluck.co
 import { FilterComponent } from './components/operators/filter/filter.component';
 import { TapComponent } from './components/operators/tap/tap.component';
 import { MapLabComponent } from './components/operators/map-lab/map-lab.component';
-import { ReduceComponent } from './components/operators/reduce/reduce.component'; 
+import { ReduceComponent } from './components/operators/reduce/reduce.component';
+import { ScanComponent } from './components/operators/scan/scan.component'; 
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ReduceComponent } from './components/operators/reduce/reduce.component'
     FilterComponent,
     TapComponent,
     MapLabComponent,
-    ReduceComponent
+    ReduceComponent,
+    ScanComponent
   ],
   imports: [
     BrowserModule,

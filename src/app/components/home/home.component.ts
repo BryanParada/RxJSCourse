@@ -35,6 +35,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/tap', text: 'Tap' },
     {route: '/rxJS/map-lab', text: 'Map Lab' },
     {route: '/rxJS/reduce', text: 'Reduce' },
+    {route: '/rxJS/scan', text: 'Scan' },
     
   ];
 
