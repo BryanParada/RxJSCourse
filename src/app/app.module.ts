@@ -20,7 +20,8 @@ import { ScanComponent } from './components/operators/scan/scan.component';
 import { TakeComponent } from './components/operators/take/take.component';
 import { FirstComponent } from './components/operators/first/first.component';
 import { TakeWhileComponent } from './components/operators/take-while/take-while.component';
-import { TakeUntilComponent } from './components/operators/take-until/take-until.component'; 
+import { TakeUntilComponent } from './components/operators/take-until/take-until.component';
+import { DistinctComponent } from './components/operators/distinct/distinct.component'; 
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { TakeUntilComponent } from './components/operators/take-until/take-until
     TakeComponent,
     FirstComponent,
     TakeWhileComponent,
-    TakeUntilComponent
+    TakeUntilComponent,
+    DistinctComponent
   ],
   imports: [
     BrowserModule,

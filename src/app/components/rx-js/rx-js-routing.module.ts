@@ -20,6 +20,7 @@ import { TakeComponent } from '../operators/take/take.component';
 import { FirstComponent } from '../operators/first/first.component';
 import { TakeWhileComponent } from '../operators/take-while/take-while.component';
 import { TakeUntilComponent } from '../operators/take-until/take-until.component';
+import { DistinctComponent } from '../operators/distinct/distinct.component';
 
 const routes: Routes = [
   {
@@ -48,6 +49,7 @@ const routes: Routes = [
          { path:'first', component: FirstComponent}, 
          { path:'take-while', component: TakeWhileComponent}, 
          { path:'take-until', component: TakeUntilComponent}, 
+         { path:'distinct', component: DistinctComponent}, 
 
          { path:'**', redirectTo: 'home'},
        ]
