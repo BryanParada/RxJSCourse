@@ -44,6 +44,7 @@ export class HomeComponent implements OnInit {
 
     {route: '/rxJS/debounce-time', text: 'Debounce Time' },
     {route: '/rxJS/throttle-time', text: 'Throttle Time' },
+    {route: '/rxJS/sample-time', text: 'Sample Time' },
     
   ];
 

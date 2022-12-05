@@ -23,6 +23,7 @@ import { TakeUntilComponent } from '../operators/take-until/take-until.component
 import { DistinctComponent } from '../operators/distinct/distinct.component'; 
 import { DebounceTimeComponent } from '../operatorsTime/debounce-time/debounce-time.component';
 import { ThrottleTimeComponent } from '../operatorsTime/throttle-time/throttle-time.component';
+import { SampleTimeComponent } from '../operatorsTime/sample-time/sample-time.component';
 
 const routes: Routes = [
   {
@@ -55,6 +56,7 @@ const routes: Routes = [
          //OPERADORES TIEMPO
          { path:'debounce-time', component: DebounceTimeComponent}, 
          { path:'throttle-time', component: ThrottleTimeComponent}, 
+         { path:'sample-time', component: SampleTimeComponent}, 
 
 
          { path:'**', redirectTo: 'home'},
