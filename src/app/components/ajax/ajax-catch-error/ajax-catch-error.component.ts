@@ -22,12 +22,21 @@ export class AjaxCatchErrorComponent implements OnInit {
 
     const url = 'https://api.github.com/usersx?per_page=5';
 
+    const handleErrores = ( response: Response) => {
+      if (!response.ok){
+        throw new EvalError( response.statusText);
+      }
+
+      return response;
+    }
+
     const fetchPromise = fetch( url );
 
     fetchPromise
-    .then( resp => resp.json() )
-    .then( data => console.log('data:', data) )
-    .catch( err => console.warn('error in users', err))
+      .then( handleErrores)
+      .then( resp => resp.json() )
+      .then( data => console.log('data:', data) )
+      .catch( err => console.warn('error in users', err))
 
 
 
