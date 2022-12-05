@@ -26,6 +26,7 @@ import { ThrottleTimeComponent } from '../operatorsTime/throttle-time/throttle-t
 import { SampleTimeComponent } from '../operatorsTime/sample-time/sample-time.component';
 import { SampleComponent } from '../operatorsTime/sample/sample.component';
 import { AuditTimeComponent } from '../operatorsTime/audit-time/audit-time.component';
+import { AjaxCatchErrorComponent } from '../ajax/ajax-catch-error/ajax-catch-error.component';
 
 const routes: Routes = [
   {
@@ -61,6 +62,8 @@ const routes: Routes = [
          { path:'sample-time', component: SampleTimeComponent}, 
          { path:'sample', component: SampleComponent}, 
          { path:'audit-time', component: AuditTimeComponent}, 
+         //AJAX
+         { path:'ajax-catch-error', component: AjaxCatchErrorComponent}, 
 
 
          { path:'**', redirectTo: 'home'},

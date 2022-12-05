@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
   }
 
   menuObservables: menuItem[] = [
+    //OBSERVABLES
     {route: '/rxJS/observable', text: 'Observable' }, 
     {route: '/rxJS/unsubscribe', text: 'Unsubscribe Add' }, 
     {route: '/rxJS/subject', text: 'Subject' }, 
@@ -29,7 +30,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/interval-timer', text: 'interval Timer' },
     {route: '/rxJS/async-scheduler', text: 'async Scheduler' },
     {route: '/rxJS/advanced-from', text: 'Advanced From' },
-
+    //OPERADORES
     {route: '/rxJS/map-pluck', text: 'Map Pluck MapTo' },
     {route: '/rxJS/filter', text: 'Filter' },
     {route: '/rxJS/tap', text: 'Tap' },
@@ -41,12 +42,14 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/take-while', text: 'Take While' },
     {route: '/rxJS/take-until', text: 'Take Until' },
     {route: '/rxJS/distinct', text: 'Distinct' },
-
+    //OPERADORES TIEMPO
     {route: '/rxJS/debounce-time', text: 'Debounce Time' },
     {route: '/rxJS/throttle-time', text: 'Throttle Time' },
     {route: '/rxJS/sample-time', text: 'Sample Time' },
     {route: '/rxJS/sample', text: 'Sample' },
     {route: '/rxJS/audit-time', text: 'Audit Time' },
+    //AJAX
+    {route: '/rxJS/ajax-catch-error', text: 'Ajax Catch Error' },
     
   ];
 

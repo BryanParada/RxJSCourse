@@ -26,7 +26,8 @@ import { DebounceTimeComponent } from './components/operatorsTime/debounce-time/
 import { ThrottleTimeComponent } from './components/operatorsTime/throttle-time/throttle-time.component';
 import { SampleTimeComponent } from './components/operatorsTime/sample-time/sample-time.component';
 import { SampleComponent } from './components/operatorsTime/sample/sample.component';
-import { AuditTimeComponent } from './components/operatorsTime/audit-time/audit-time.component'; 
+import { AuditTimeComponent } from './components/operatorsTime/audit-time/audit-time.component';
+import { AjaxCatchErrorComponent } from './components/ajax/ajax-catch-error/ajax-catch-error.component'; 
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { AuditTimeComponent } from './components/operatorsTime/audit-time/audit-
     ThrottleTimeComponent,
     SampleTimeComponent,
     SampleComponent,
-    AuditTimeComponent
+    AuditTimeComponent,
+    AjaxCatchErrorComponent
   ],
   imports: [
     BrowserModule,
