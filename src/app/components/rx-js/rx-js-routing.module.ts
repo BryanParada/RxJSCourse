@@ -14,6 +14,7 @@ import { MapPluckComponent } from '../operators/map-pluck/map-pluck.component';
 import { FilterComponent } from '../operators/filter/filter.component';
 import { TapComponent } from '../operators/tap/tap.component';
 import { MapLabComponent } from '../operators/map-lab/map-lab.component';
+import { ReduceComponent } from '../operators/reduce/reduce.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,7 @@ const routes: Routes = [
          { path:'filter', component: FilterComponent},
          { path:'tap', component: TapComponent},
          { path:'map-lab', component: MapLabComponent},
+         { path:'reduce', component: ReduceComponent},
 
          { path:'**', redirectTo: 'home'},
        ]

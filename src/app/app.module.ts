@@ -14,7 +14,8 @@ import { AdvancedFromComponent } from './components/observables/advanced-from/ad
 import { MapPluckComponent } from './components/operators/map-pluck/map-pluck.component';
 import { FilterComponent } from './components/operators/filter/filter.component';
 import { TapComponent } from './components/operators/tap/tap.component';
-import { MapLabComponent } from './components/operators/map-lab/map-lab.component'; 
+import { MapLabComponent } from './components/operators/map-lab/map-lab.component';
+import { ReduceComponent } from './components/operators/reduce/reduce.component'; 
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { MapLabComponent } from './components/operators/map-lab/map-lab.componen
     MapPluckComponent,
     FilterComponent,
     TapComponent,
-    MapLabComponent
+    MapLabComponent,
+    ReduceComponent
   ],
   imports: [
     BrowserModule,
