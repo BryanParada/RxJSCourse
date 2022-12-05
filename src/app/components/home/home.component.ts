@@ -37,6 +37,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/reduce', text: 'Reduce' },
     {route: '/rxJS/scan', text: 'Scan' },
     {route: '/rxJS/take', text: 'Take' },
+    {route: '/rxJS/first', text: 'First' },
     
   ];
 
