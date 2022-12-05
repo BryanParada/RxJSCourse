@@ -21,7 +21,8 @@ import { TakeComponent } from './components/operators/take/take.component';
 import { FirstComponent } from './components/operators/first/first.component';
 import { TakeWhileComponent } from './components/operators/take-while/take-while.component';
 import { TakeUntilComponent } from './components/operators/take-until/take-until.component';
-import { DistinctComponent } from './components/operators/distinct/distinct.component'; 
+import { DistinctComponent } from './components/operators/distinct/distinct.component';
+import { DebounceTimeComponent } from './components/operatorsTime/debounce-time/debounce-time.component'; 
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { DistinctComponent } from './components/operators/distinct/distinct.comp
     FirstComponent,
     TakeWhileComponent,
     TakeUntilComponent,
-    DistinctComponent
+    DistinctComponent,
+    DebounceTimeComponent
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,8 @@ import { TakeComponent } from '../operators/take/take.component';
 import { FirstComponent } from '../operators/first/first.component';
 import { TakeWhileComponent } from '../operators/take-while/take-while.component';
 import { TakeUntilComponent } from '../operators/take-until/take-until.component';
-import { DistinctComponent } from '../operators/distinct/distinct.component';
+import { DistinctComponent } from '../operators/distinct/distinct.component'; 
+import { DebounceTimeComponent } from '../operatorsTime/debounce-time/debounce-time.component';
 
 const routes: Routes = [
   {
@@ -50,6 +51,9 @@ const routes: Routes = [
          { path:'take-while', component: TakeWhileComponent}, 
          { path:'take-until', component: TakeUntilComponent}, 
          { path:'distinct', component: DistinctComponent}, 
+         //OPERADORES TIEMPO
+         { path:'debounce-time', component: DebounceTimeComponent}, 
+
 
          { path:'**', redirectTo: 'home'},
        ]

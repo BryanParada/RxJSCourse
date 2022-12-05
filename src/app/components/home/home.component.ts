@@ -41,6 +41,8 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/take-while', text: 'Take While' },
     {route: '/rxJS/take-until', text: 'Take Until' },
     {route: '/rxJS/distinct', text: 'Distinct' },
+
+    {route: '/rxJS/debounce-time', text: 'Debounce Time' },
     
   ];
 
