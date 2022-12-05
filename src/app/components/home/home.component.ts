@@ -38,6 +38,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/scan', text: 'Scan' },
     {route: '/rxJS/take', text: 'Take' },
     {route: '/rxJS/first', text: 'First' },
+    {route: '/rxJS/take-while', text: 'Take While' },
     
   ];
 

@@ -18,6 +18,7 @@ import { ReduceComponent } from '../operators/reduce/reduce.component';
 import { ScanComponent } from '../operators/scan/scan.component';
 import { TakeComponent } from '../operators/take/take.component';
 import { FirstComponent } from '../operators/first/first.component';
+import { TakeWhileComponent } from '../operators/take-while/take-while.component';
 
 const routes: Routes = [
   {
@@ -44,6 +45,7 @@ const routes: Routes = [
          { path:'scan', component: ScanComponent}, 
          { path:'take', component: TakeComponent}, 
          { path:'first', component: FirstComponent}, 
+         { path:'take-while', component: TakeWhileComponent}, 
 
          { path:'**', redirectTo: 'home'},
        ]

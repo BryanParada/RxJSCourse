@@ -18,7 +18,8 @@ import { MapLabComponent } from './components/operators/map-lab/map-lab.componen
 import { ReduceComponent } from './components/operators/reduce/reduce.component';
 import { ScanComponent } from './components/operators/scan/scan.component';
 import { TakeComponent } from './components/operators/take/take.component';
-import { FirstComponent } from './components/operators/first/first.component'; 
+import { FirstComponent } from './components/operators/first/first.component';
+import { TakeWhileComponent } from './components/operators/take-while/take-while.component'; 
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { FirstComponent } from './components/operators/first/first.component';
     ReduceComponent,
     ScanComponent,
     TakeComponent,
-    FirstComponent
+    FirstComponent,
+    TakeWhileComponent
   ],
   imports: [
     BrowserModule,
