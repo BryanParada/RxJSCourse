@@ -13,7 +13,8 @@ import { AsyncSchedulerComponent } from './components/observables/async-schedule
 import { AdvancedFromComponent } from './components/observables/advanced-from/advanced-from.component';
 import { MapPluckComponent } from './components/operators/map-pluck/map-pluck.component';
 import { FilterComponent } from './components/operators/filter/filter.component';
-import { TapComponent } from './components/operators/tap/tap.component'; 
+import { TapComponent } from './components/operators/tap/tap.component';
+import { MapLabComponent } from './components/operators/map-lab/map-lab.component'; 
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { TapComponent } from './components/operators/tap/tap.component';
     AdvancedFromComponent,
     MapPluckComponent,
     FilterComponent,
-    TapComponent
+    TapComponent,
+    MapLabComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,7 @@ import { AdvancedFromComponent } from '../observables/advanced-from/advanced-fro
 import { MapPluckComponent } from '../operators/map-pluck/map-pluck.component';
 import { FilterComponent } from '../operators/filter/filter.component';
 import { TapComponent } from '../operators/tap/tap.component';
+import { MapLabComponent } from '../operators/map-lab/map-lab.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,7 @@ const routes: Routes = [
          { path:'map-pluck', component: MapPluckComponent},
          { path:'filter', component: FilterComponent},
          { path:'tap', component: TapComponent},
+         { path:'map-lab', component: MapLabComponent},
 
          { path:'**', redirectTo: 'home'},
        ]
