@@ -19,7 +19,8 @@ import { ReduceComponent } from './components/operators/reduce/reduce.component'
 import { ScanComponent } from './components/operators/scan/scan.component';
 import { TakeComponent } from './components/operators/take/take.component';
 import { FirstComponent } from './components/operators/first/first.component';
-import { TakeWhileComponent } from './components/operators/take-while/take-while.component'; 
+import { TakeWhileComponent } from './components/operators/take-while/take-while.component';
+import { TakeUntilComponent } from './components/operators/take-until/take-until.component'; 
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { TakeWhileComponent } from './components/operators/take-while/take-while
     ScanComponent,
     TakeComponent,
     FirstComponent,
-    TakeWhileComponent
+    TakeWhileComponent,
+    TakeUntilComponent
   ],
   imports: [
     BrowserModule,
