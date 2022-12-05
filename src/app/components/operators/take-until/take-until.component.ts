@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild, Renderer2 } from '@angular/core'; 
-import { fromEvent, map, tap, takeWhile, interval, takeUntil } from 'rxjs';
+import { fromEvent, map, tap, takeWhile, interval, takeUntil, skip } from 'rxjs';
 
 @Component({
   selector: 'app-take-until',
@@ -28,7 +28,12 @@ export class TakeUntilComponent implements OnInit  {
        this.renderer.appendChild(this.divTU.nativeElement, button)
    
        const counter$ = interval(1000);
-       const clickBtn$ = fromEvent( button, 'click' );
+      //  const clickBtn$ = fromEvent( button, 'click' );
+       const clickBtn$ = fromEvent( button, 'click' ).pipe(
+        tap ( () => console.log('tap antes de skip')),
+        skip(1), //al segundo click terminara el obs
+        tap ( () => console.log('tap despues de skip')),
+       );
 
       counter$.pipe(
         takeUntil( clickBtn$ )

@@ -17,7 +17,11 @@ export class MapLabComponent implements OnInit {
 
   ngOnInit(): void {
     console.clear();
-    this.initComponent();
+   
+   }
+
+   ngAfterViewInit(): void {
+    this.initComponent(); 
    }
 
    initComponent(){
