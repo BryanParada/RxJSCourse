@@ -25,7 +25,8 @@ import { DistinctComponent } from './components/operators/distinct/distinct.comp
 import { DebounceTimeComponent } from './components/operatorsTime/debounce-time/debounce-time.component';
 import { ThrottleTimeComponent } from './components/operatorsTime/throttle-time/throttle-time.component';
 import { SampleTimeComponent } from './components/operatorsTime/sample-time/sample-time.component';
-import { SampleComponent } from './components/operatorsTime/sample/sample.component'; 
+import { SampleComponent } from './components/operatorsTime/sample/sample.component';
+import { AuditTimeComponent } from './components/operatorsTime/audit-time/audit-time.component'; 
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { SampleComponent } from './components/operatorsTime/sample/sample.compon
     DebounceTimeComponent,
     ThrottleTimeComponent,
     SampleTimeComponent,
-    SampleComponent
+    SampleComponent,
+    AuditTimeComponent
   ],
   imports: [
     BrowserModule,

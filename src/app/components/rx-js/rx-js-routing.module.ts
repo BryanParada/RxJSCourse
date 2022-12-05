@@ -25,6 +25,7 @@ import { DebounceTimeComponent } from '../operatorsTime/debounce-time/debounce-t
 import { ThrottleTimeComponent } from '../operatorsTime/throttle-time/throttle-time.component';
 import { SampleTimeComponent } from '../operatorsTime/sample-time/sample-time.component';
 import { SampleComponent } from '../operatorsTime/sample/sample.component';
+import { AuditTimeComponent } from '../operatorsTime/audit-time/audit-time.component';
 
 const routes: Routes = [
   {
@@ -59,6 +60,7 @@ const routes: Routes = [
          { path:'throttle-time', component: ThrottleTimeComponent}, 
          { path:'sample-time', component: SampleTimeComponent}, 
          { path:'sample', component: SampleComponent}, 
+         { path:'audit-time', component: AuditTimeComponent}, 
 
 
          { path:'**', redirectTo: 'home'},
