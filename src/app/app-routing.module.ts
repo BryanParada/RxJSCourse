@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
      path:'rxJS',
-     loadChildren: () =>  import('./components/rx-js/rx-js.module').then (m => m.RxJSModule),
+     loadChildren: () =>  import('./components/rx-js.module').then (m => m.RxJSModule),
   
   },
   {
