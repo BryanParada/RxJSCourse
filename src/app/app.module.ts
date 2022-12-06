@@ -36,7 +36,9 @@ import { SwitchMapComponent } from './components/transformation/switch-map/switc
 import { SwitchmapVsMergemapComponent } from './components/transformation/switchmap-vs-mergemap/switchmap-vs-mergemap.component';
 import { ConcatMapComponent } from './components/transformation/concat-map/concat-map.component';
 import { ExhaustMapComponent } from './components/transformation/exhaust-map/exhaust-map.component';
+import { FlatteningLabComponent } from './components/transformation/flattening-lab/flattening-lab.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -72,12 +74,14 @@ import { ExhaustMapComponent } from './components/transformation/exhaust-map/exh
     SwitchMapComponent,
     SwitchmapVsMergemapComponent,
     ConcatMapComponent,
-    ExhaustMapComponent
+    ExhaustMapComponent,
+    FlatteningLabComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -59,6 +59,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/switchmapVsMergemap', text: 'Switch Map VS Merge Map' }, 
     {route: '/rxJS/concat-map', text: 'Concat Map' }, 
     {route: '/rxJS/exhaust-map', text: 'Exhaust Map' }, 
+    {route: '/rxJS/flattening-lab', text: 'Flattening Lab' }, 
 
   ];
 
