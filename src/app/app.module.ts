@@ -28,7 +28,8 @@ import { SampleTimeComponent } from './components/operatorsTime/sample-time/samp
 import { SampleComponent } from './components/operatorsTime/sample/sample.component';
 import { AuditTimeComponent } from './components/operatorsTime/audit-time/audit-time.component';
 import { AjaxCatchErrorComponent } from './components/ajax/ajax-catch-error/ajax-catch-error.component';
-import { GetJsonComponent } from './components/ajax/get-json/get-json.component'; 
+import { GetJsonComponent } from './components/ajax/get-json/get-json.component';
+import { PutPostDeleteComponent } from './components/ajax/put-post-delete/put-post-delete.component'; 
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { GetJsonComponent } from './components/ajax/get-json/get-json.component'
     SampleComponent,
     AuditTimeComponent,
     AjaxCatchErrorComponent,
-    GetJsonComponent
+    GetJsonComponent,
+    PutPostDeleteComponent
   ],
   imports: [
     BrowserModule,

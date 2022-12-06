@@ -28,6 +28,7 @@ import { SampleComponent } from '../operatorsTime/sample/sample.component';
 import { AuditTimeComponent } from '../operatorsTime/audit-time/audit-time.component';
 import { AjaxCatchErrorComponent } from '../ajax/ajax-catch-error/ajax-catch-error.component';
 import { GetJsonComponent } from '../ajax/get-json/get-json.component';
+import { PutPostDeleteComponent } from '../ajax/put-post-delete/put-post-delete.component';
 
 const routes: Routes = [
   {
@@ -66,6 +67,7 @@ const routes: Routes = [
          //AJAX
          { path:'ajax-catch-error', component: AjaxCatchErrorComponent}, 
          { path:'get-json', component: GetJsonComponent}, 
+         { path:'put-post-delete', component: PutPostDeleteComponent}, 
 
 
          { path:'**', redirectTo: 'home'},
