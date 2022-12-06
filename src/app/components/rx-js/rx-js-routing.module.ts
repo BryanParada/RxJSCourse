@@ -32,6 +32,7 @@ import { PutPostDeleteComponent } from '../ajax/put-post-delete/put-post-delete.
 import { MergeAllComponent } from '../transformation/merge-all/merge-all.component';
 import { MergeMapComponent } from '../transformation/merge-map/merge-map.component';
 import { SwitchMapComponent } from '../transformation/switch-map/switch-map.component';
+import { SwitchmapVsMergemapComponent } from '../transformation/switchmap-vs-mergemap/switchmap-vs-mergemap.component';
 
 const routes: Routes = [
   {
@@ -75,6 +76,7 @@ const routes: Routes = [
          { path:'merge-all', component: MergeAllComponent}, 
          { path:'merge-map', component: MergeMapComponent}, 
          { path:'switch-map', component: SwitchMapComponent}, 
+         { path:'switchmapVsMergemap', component: SwitchmapVsMergemapComponent}, 
 
 
          { path:'**', redirectTo: 'home'},

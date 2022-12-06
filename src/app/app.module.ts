@@ -32,7 +32,8 @@ import { GetJsonComponent } from './components/ajax/get-json/get-json.component'
 import { PutPostDeleteComponent } from './components/ajax/put-post-delete/put-post-delete.component';
 import { MergeAllComponent } from './components/transformation/merge-all/merge-all.component';
 import { MergeMapComponent } from './components/transformation/merge-map/merge-map.component';
-import { SwitchMapComponent } from './components/transformation/switch-map/switch-map.component'; 
+import { SwitchMapComponent } from './components/transformation/switch-map/switch-map.component';
+import { SwitchmapVsMergemapComponent } from './components/transformation/switchmap-vs-mergemap/switchmap-vs-mergemap.component'; 
 
 
 @NgModule({
@@ -66,7 +67,8 @@ import { SwitchMapComponent } from './components/transformation/switch-map/switc
     PutPostDeleteComponent,
     MergeAllComponent,
     MergeMapComponent,
-    SwitchMapComponent
+    SwitchMapComponent,
+    SwitchmapVsMergemapComponent
   ],
   imports: [
     BrowserModule,
