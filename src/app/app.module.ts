@@ -30,7 +30,8 @@ import { AuditTimeComponent } from './components/operatorsTime/audit-time/audit-
 import { AjaxCatchErrorComponent } from './components/ajax/ajax-catch-error/ajax-catch-error.component';
 import { GetJsonComponent } from './components/ajax/get-json/get-json.component';
 import { PutPostDeleteComponent } from './components/ajax/put-post-delete/put-post-delete.component';
-import { MergeAllComponent } from './components/transformation/merge-all/merge-all.component'; 
+import { MergeAllComponent } from './components/transformation/merge-all/merge-all.component';
+import { MergeMapComponent } from './components/transformation/merge-map/merge-map.component'; 
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { MergeAllComponent } from './components/transformation/merge-all/merge-a
     AjaxCatchErrorComponent,
     GetJsonComponent,
     PutPostDeleteComponent,
-    MergeAllComponent
+    MergeAllComponent,
+    MergeMapComponent
   ],
   imports: [
     BrowserModule,

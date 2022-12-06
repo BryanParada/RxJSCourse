@@ -30,6 +30,7 @@ import { AjaxCatchErrorComponent } from '../ajax/ajax-catch-error/ajax-catch-err
 import { GetJsonComponent } from '../ajax/get-json/get-json.component';
 import { PutPostDeleteComponent } from '../ajax/put-post-delete/put-post-delete.component';
 import { MergeAllComponent } from '../transformation/merge-all/merge-all.component';
+import { MergeMapComponent } from '../transformation/merge-map/merge-map.component';
 
 const routes: Routes = [
   {
@@ -71,6 +72,7 @@ const routes: Routes = [
          { path:'put-post-delete', component: PutPostDeleteComponent}, 
          //TRANSFORMACION
          { path:'merge-all', component: MergeAllComponent}, 
+         { path:'merge-map', component: MergeMapComponent}, 
 
 
          { path:'**', redirectTo: 'home'},

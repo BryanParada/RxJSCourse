@@ -54,6 +54,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/put-post-delete', text: 'Put Post Delete ' },
     //TRANSFORMACION
     {route: '/rxJS/merge-all', text: 'Merge All' },
+    {route: '/rxJS/merge-map', text: 'Merge Map' },
 
   ];
 
