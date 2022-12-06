@@ -34,7 +34,8 @@ import { MergeAllComponent } from './components/transformation/merge-all/merge-a
 import { MergeMapComponent } from './components/transformation/merge-map/merge-map.component';
 import { SwitchMapComponent } from './components/transformation/switch-map/switch-map.component';
 import { SwitchmapVsMergemapComponent } from './components/transformation/switchmap-vs-mergemap/switchmap-vs-mergemap.component';
-import { ConcatMapComponent } from './components/transformation/concat-map/concat-map.component'; 
+import { ConcatMapComponent } from './components/transformation/concat-map/concat-map.component';
+import { ExhaustMapComponent } from './components/transformation/exhaust-map/exhaust-map.component';
 
 
 @NgModule({
@@ -70,7 +71,8 @@ import { ConcatMapComponent } from './components/transformation/concat-map/conca
     MergeMapComponent,
     SwitchMapComponent,
     SwitchmapVsMergemapComponent,
-    ConcatMapComponent
+    ConcatMapComponent,
+    ExhaustMapComponent
   ],
   imports: [
     BrowserModule,
