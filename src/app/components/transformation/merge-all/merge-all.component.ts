@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild,Renderer2 } from '@angular/core'; 
 import { ajax, AjaxError } from 'rxjs/ajax';
-import { fromEvent, debounceTime, map, pluck } from 'rxjs';
+import { fromEvent, debounceTime, map, pluck, mergeAll } from 'rxjs';
 
 @Component({
   selector: 'app-merge-all',
@@ -33,22 +33,35 @@ export class MergeAllComponent implements OnInit {
      //Streams
      const input$ = fromEvent<KeyboardEvent>( textInput, 'keyup');
 
-     input$.pipe(
-      debounceTime(500),
-      map( event =>{
-        const text = (<HTMLInputElement>event.target).value //event.target['value'];
+    //  input$.pipe(
+    //   debounceTime(500), 
+    //   map( event =>{
+    //     const text = (<HTMLInputElement>event.target).value //event.target['value'];
        
 
-        return ajax.getJSON(
-          `https://api.github.com/users/${text}`
-        )
-      })
+    //     return ajax.getJSON(
+    //       `https://api.github.com/search/users?q=${text}`
+    //     )
+    //   })
+    //  ).subscribe( resp => {
+    //     resp.pipe(
+    //       //pluck('url')
+    //     )
+    //     .subscribe( console.log )
+    //  }) 
+
+     input$.pipe(
+      debounceTime(500),
+      pluck('target','value'),
+      map( text => ajax.getJSON(
+          `https://api.github.com/search/users?q=${text}` 
+      )),
+      mergeAll(),
+      pluck('items')
      ).subscribe( resp => {
-        resp.pipe(
-          pluck('url')
-        )
-        .subscribe( console.log )
+      console.log(resp)
      }) 
+
 
 
 
