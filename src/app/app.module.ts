@@ -31,7 +31,8 @@ import { AjaxCatchErrorComponent } from './components/ajax/ajax-catch-error/ajax
 import { GetJsonComponent } from './components/ajax/get-json/get-json.component';
 import { PutPostDeleteComponent } from './components/ajax/put-post-delete/put-post-delete.component';
 import { MergeAllComponent } from './components/transformation/merge-all/merge-all.component';
-import { MergeMapComponent } from './components/transformation/merge-map/merge-map.component'; 
+import { MergeMapComponent } from './components/transformation/merge-map/merge-map.component';
+import { SwitchMapComponent } from './components/transformation/switch-map/switch-map.component'; 
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { MergeMapComponent } from './components/transformation/merge-map/merge-m
     GetJsonComponent,
     PutPostDeleteComponent,
     MergeAllComponent,
-    MergeMapComponent
+    MergeMapComponent,
+    SwitchMapComponent
   ],
   imports: [
     BrowserModule,

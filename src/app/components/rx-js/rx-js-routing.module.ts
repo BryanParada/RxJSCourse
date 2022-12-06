@@ -31,6 +31,7 @@ import { GetJsonComponent } from '../ajax/get-json/get-json.component';
 import { PutPostDeleteComponent } from '../ajax/put-post-delete/put-post-delete.component';
 import { MergeAllComponent } from '../transformation/merge-all/merge-all.component';
 import { MergeMapComponent } from '../transformation/merge-map/merge-map.component';
+import { SwitchMapComponent } from '../transformation/switch-map/switch-map.component';
 
 const routes: Routes = [
   {
@@ -73,6 +74,7 @@ const routes: Routes = [
          //TRANSFORMACION
          { path:'merge-all', component: MergeAllComponent}, 
          { path:'merge-map', component: MergeMapComponent}, 
+         { path:'switch-map', component: SwitchMapComponent}, 
 
 
          { path:'**', redirectTo: 'home'},
