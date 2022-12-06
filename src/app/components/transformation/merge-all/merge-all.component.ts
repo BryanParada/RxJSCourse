@@ -1,6 +1,8 @@
 import { Component, ElementRef, OnInit, ViewChild,Renderer2 } from '@angular/core'; 
 import { ajax, AjaxError } from 'rxjs/ajax';
-import { fromEvent, debounceTime, map, pluck, mergeAll } from 'rxjs';
+import { fromEvent, debounceTime, map, pluck, mergeAll, Observable } from 'rxjs';
+import { GithubUser } from '../../../interfaces/gthub-user.interface';
+import { GithubUsersResp } from '../../../interfaces/github-users.interface';
 
 @Component({
   selector: 'app-merge-all',
@@ -30,7 +32,35 @@ export class MergeAllComponent implements OnInit {
       this.renderer.appendChild(this.divMa.nativeElement, textInput)
       this.renderer.appendChild(this.divMa.nativeElement, orderList)
       
-     //Streams
+    //HELPERS
+    const showUsers = ( users: GithubUser[]) => {
+
+      console.log(users);
+      orderList.innerHTML = '';
+
+      for( const user of users){
+        
+        const li = document.createElement('li');
+        const img = document.createElement('img');
+        img.src = user.avatar_url;
+
+        const anchor = document.createElement('a');
+        anchor.href = user.html_url;
+        anchor.text = 'See page';
+        anchor.target = '_blank';
+
+        li.append( img );
+        li.append( user.login + ' ');
+        li.append( anchor);
+
+        orderList.append(li);
+        
+      }
+      
+    }
+
+
+     //-----STREAMS
      const input$ = fromEvent<KeyboardEvent>( textInput, 'keyup');
 
     //  input$.pipe(
@@ -50,20 +80,45 @@ export class MergeAllComponent implements OnInit {
     //     .subscribe( console.log )
     //  }) 
 
-     input$.pipe(
-      debounceTime(500),
-      pluck('target','value'),
-      map( text => ajax.getJSON(
+
+
+    //SIN TIPADO
+    //  input$.pipe(
+    //   debounceTime(500),
+    //   pluck('target','value'),
+    //   map( text => ajax.getJSON(
+    //       `https://api.github.com/search/users?q=${text}` 
+    //   )),
+    //   mergeAll(),
+    //   pluck('items')
+    //  ).subscribe( resp => {
+    //   console.log(resp)
+    //  }) 
+
+
+    //CON TIPADO
+    input$.pipe(
+      debounceTime<KeyboardEvent>(500),
+      //pluck<KeyboardEvent, string>('target','value'),
+      map<KeyboardEvent, string>(event => (event.target as HTMLInputElement).value),
+      map<string, Observable<GithubUsersResp>>( text => ajax.getJSON( 
           `https://api.github.com/search/users?q=${text}` 
       )),
-      mergeAll(),
-      pluck('items')
-     ).subscribe( resp => {
-      console.log(resp)
-     }) 
+      mergeAll<Observable<GithubUsersResp>>(),
+      //pluck('items')
+      map<GithubUsersResp, GithubUser[]>(item => item.items)
+     ).subscribe( 
+      showUsers
 
+    //   users => {
+    //   console.log(users[0].login)
+    //   // console.log('users', users);
+    //  }
+     
+     ) 
 
-
+ 
+ 
 
    }
 
