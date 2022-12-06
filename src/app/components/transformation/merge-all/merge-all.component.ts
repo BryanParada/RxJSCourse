@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild,Renderer2 } from '@angular/core'; 
 import { ajax, AjaxError } from 'rxjs/ajax';
-import { fromEvent, debounceTime, map, pluck, mergeAll, Observable } from 'rxjs';
+import { fromEvent, debounceTime, map, pluck, mergeAll, Observable, mergeMap } from 'rxjs';
 import { GithubUser } from '../../../interfaces/gthub-user.interface';
 import { GithubUsersResp } from '../../../interfaces/github-users.interface';
 
@@ -118,6 +118,19 @@ export class MergeAllComponent implements OnInit {
      ) 
 
  
+      //otro ejemplo con """"""""MergeMap""""""""" - R79 mas info
+
+      const url = 'https://httpbin.org/delay/1?arg=';
+
+      input$.pipe(
+        pluck('target', 'value'),
+        mergeMap( text => ajax.getJSON(url + text))
+      ).subscribe(console.log)
+      
+ 
+
+
+
  
 
    }
