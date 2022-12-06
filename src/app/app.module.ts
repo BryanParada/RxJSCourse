@@ -27,7 +27,8 @@ import { ThrottleTimeComponent } from './components/operatorsTime/throttle-time/
 import { SampleTimeComponent } from './components/operatorsTime/sample-time/sample-time.component';
 import { SampleComponent } from './components/operatorsTime/sample/sample.component';
 import { AuditTimeComponent } from './components/operatorsTime/audit-time/audit-time.component';
-import { AjaxCatchErrorComponent } from './components/ajax/ajax-catch-error/ajax-catch-error.component'; 
+import { AjaxCatchErrorComponent } from './components/ajax/ajax-catch-error/ajax-catch-error.component';
+import { GetJsonComponent } from './components/ajax/get-json/get-json.component'; 
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { AjaxCatchErrorComponent } from './components/ajax/ajax-catch-error/ajax
     SampleTimeComponent,
     SampleComponent,
     AuditTimeComponent,
-    AjaxCatchErrorComponent
+    AjaxCatchErrorComponent,
+    GetJsonComponent
   ],
   imports: [
     BrowserModule,

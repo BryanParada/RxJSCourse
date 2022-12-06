@@ -27,6 +27,7 @@ import { SampleTimeComponent } from '../operatorsTime/sample-time/sample-time.co
 import { SampleComponent } from '../operatorsTime/sample/sample.component';
 import { AuditTimeComponent } from '../operatorsTime/audit-time/audit-time.component';
 import { AjaxCatchErrorComponent } from '../ajax/ajax-catch-error/ajax-catch-error.component';
+import { GetJsonComponent } from '../ajax/get-json/get-json.component';
 
 const routes: Routes = [
   {
@@ -64,6 +65,7 @@ const routes: Routes = [
          { path:'audit-time', component: AuditTimeComponent}, 
          //AJAX
          { path:'ajax-catch-error', component: AjaxCatchErrorComponent}, 
+         { path:'get-json', component: GetJsonComponent}, 
 
 
          { path:'**', redirectTo: 'home'},

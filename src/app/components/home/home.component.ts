@@ -50,6 +50,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/audit-time', text: 'Audit Time' },
     //AJAX
     {route: '/rxJS/ajax-catch-error', text: 'Ajax Catch Error' },
+    {route: '/rxJS/get-json', text: 'Get Json' },
     
   ];
 
