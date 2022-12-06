@@ -33,7 +33,8 @@ import { PutPostDeleteComponent } from './components/ajax/put-post-delete/put-po
 import { MergeAllComponent } from './components/transformation/merge-all/merge-all.component';
 import { MergeMapComponent } from './components/transformation/merge-map/merge-map.component';
 import { SwitchMapComponent } from './components/transformation/switch-map/switch-map.component';
-import { SwitchmapVsMergemapComponent } from './components/transformation/switchmap-vs-mergemap/switchmap-vs-mergemap.component'; 
+import { SwitchmapVsMergemapComponent } from './components/transformation/switchmap-vs-mergemap/switchmap-vs-mergemap.component';
+import { ConcatMapComponent } from './components/transformation/concat-map/concat-map.component'; 
 
 
 @NgModule({
@@ -68,7 +69,8 @@ import { SwitchmapVsMergemapComponent } from './components/transformation/switch
     MergeAllComponent,
     MergeMapComponent,
     SwitchMapComponent,
-    SwitchmapVsMergemapComponent
+    SwitchmapVsMergemapComponent,
+    ConcatMapComponent
   ],
   imports: [
     BrowserModule,

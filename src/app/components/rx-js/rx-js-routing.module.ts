@@ -33,6 +33,7 @@ import { MergeAllComponent } from '../transformation/merge-all/merge-all.compone
 import { MergeMapComponent } from '../transformation/merge-map/merge-map.component';
 import { SwitchMapComponent } from '../transformation/switch-map/switch-map.component';
 import { SwitchmapVsMergemapComponent } from '../transformation/switchmap-vs-mergemap/switchmap-vs-mergemap.component';
+import { ConcatMapComponent } from '../transformation/concat-map/concat-map.component';
 
 const routes: Routes = [
   {
@@ -77,6 +78,7 @@ const routes: Routes = [
          { path:'merge-map', component: MergeMapComponent}, 
          { path:'switch-map', component: SwitchMapComponent}, 
          { path:'switchmapVsMergemap', component: SwitchmapVsMergemapComponent}, 
+         { path:'concat-map', component: ConcatMapComponent}, 
 
 
          { path:'**', redirectTo: 'home'},
