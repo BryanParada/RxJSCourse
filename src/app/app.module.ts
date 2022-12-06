@@ -29,7 +29,8 @@ import { SampleComponent } from './components/operatorsTime/sample/sample.compon
 import { AuditTimeComponent } from './components/operatorsTime/audit-time/audit-time.component';
 import { AjaxCatchErrorComponent } from './components/ajax/ajax-catch-error/ajax-catch-error.component';
 import { GetJsonComponent } from './components/ajax/get-json/get-json.component';
-import { PutPostDeleteComponent } from './components/ajax/put-post-delete/put-post-delete.component'; 
+import { PutPostDeleteComponent } from './components/ajax/put-post-delete/put-post-delete.component';
+import { MergeAllComponent } from './components/transformation/merge-all/merge-all.component'; 
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { PutPostDeleteComponent } from './components/ajax/put-post-delete/put-po
     AuditTimeComponent,
     AjaxCatchErrorComponent,
     GetJsonComponent,
-    PutPostDeleteComponent
+    PutPostDeleteComponent,
+    MergeAllComponent
   ],
   imports: [
     BrowserModule,

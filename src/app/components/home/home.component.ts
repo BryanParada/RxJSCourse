@@ -52,7 +52,9 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/ajax-catch-error', text: 'Ajax Catch Error' },
     {route: '/rxJS/get-json', text: 'Get Json' },
     {route: '/rxJS/put-post-delete', text: 'Put Post Delete ' },
-    
+    //TRANSFORMACION
+    {route: '/rxJS/merge-all', text: 'Merge All' },
+
   ];
 
 
