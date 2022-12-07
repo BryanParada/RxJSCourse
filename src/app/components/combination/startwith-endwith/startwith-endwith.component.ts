@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { of, startWith } from "rxjs";
+import { endWith, of, startWith } from "rxjs";
 
 @Component({
   selector: 'app-startwith-endwith',
@@ -22,7 +22,9 @@ export class StartwithEndwithComponent implements OnInit {
    initComponent(){
 
     const numbers$ = of(1,2,3).pipe( 
-        startWith(0)
+        //startWith(0)
+        startWith('a','b','c'),
+        endWith('x', 'y','z')
     );
 
     numbers$.subscribe(console.log)
