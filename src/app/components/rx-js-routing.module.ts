@@ -39,6 +39,7 @@ import { FlatteningLabComponent } from './transformation/flattening-lab/flatteni
 import { StartwithEndwithComponent } from './combination/startwith-endwith/startwith-endwith.component';
 import { ConcatComponent } from './combination/concat/concat.component';
 import { MergeComponent } from './combination/merge/merge.component';
+import { CombineLatestComponent } from './combination/combine-latest/combine-latest.component';
 
 const routes: Routes = [
   {
@@ -90,6 +91,7 @@ const routes: Routes = [
          { path:'start-end-with', component: StartwithEndwithComponent}, 
          { path:'concat', component: ConcatComponent}, 
          { path:'merge', component: MergeComponent}, 
+         { path:'combine-latest', component: CombineLatestComponent}, 
 
 
          { path:'**', redirectTo: 'home'},

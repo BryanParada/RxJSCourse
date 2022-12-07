@@ -64,6 +64,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/start-end-with', text: 'Start-End With' }, 
     {route: '/rxJS/concat', text: 'Concat' }, 
     {route: '/rxJS/merge', text: 'Merge' }, 
+    {route: '/rxJS/combine-latest', text: 'Combine Latest' }, 
 
 
   ];
