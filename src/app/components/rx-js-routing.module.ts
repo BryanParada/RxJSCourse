@@ -41,6 +41,7 @@ import { ConcatComponent } from './combination/concat/concat.component';
 import { MergeComponent } from './combination/merge/merge.component';
 import { CombineLatestComponent } from './combination/combine-latest/combine-latest.component';
 import { ForkJoinComponent } from './combination/fork-join/fork-join.component';
+import { CapitalizeComponent } from './exercises/capitalize/capitalize.component';
 
 const routes: Routes = [
   {
@@ -94,6 +95,8 @@ const routes: Routes = [
          { path:'merge', component: MergeComponent}, 
          { path:'combine-latest', component: CombineLatestComponent}, 
          { path:'fork-join', component: ForkJoinComponent}, 
+         //EXERCISES
+         { path:'capitalize', component: CapitalizeComponent}, 
 
 
          { path:'**', redirectTo: 'home'},

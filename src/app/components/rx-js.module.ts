@@ -44,7 +44,8 @@ import { StartwithEndwithComponent } from './combination/startwith-endwith/start
 import { ConcatComponent } from './combination/concat/concat.component';
 import { MergeComponent } from './combination/merge/merge.component';
 import { CombineLatestComponent } from './combination/combine-latest/combine-latest.component';
-import { ForkJoinComponent } from './combination/fork-join/fork-join.component'; 
+import { ForkJoinComponent } from './combination/fork-join/fork-join.component';
+import { CapitalizeComponent } from './exercises/capitalize/capitalize.component'; 
 
 @NgModule({
   declarations: [
@@ -83,7 +84,7 @@ import { ForkJoinComponent } from './combination/fork-join/fork-join.component';
     SwitchmapVsMergemapComponent,
     ConcatMapComponent,
     ExhaustMapComponent, 
-    FlatteningLabComponent, StartwithEndwithComponent, ConcatComponent, MergeComponent, CombineLatestComponent, ForkJoinComponent
+    FlatteningLabComponent, StartwithEndwithComponent, ConcatComponent, MergeComponent, CombineLatestComponent, ForkJoinComponent, CapitalizeComponent
   ],
   imports: [ 
     RxJSRoutingModule,
