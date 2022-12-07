@@ -46,6 +46,7 @@ import { ExReduceComponent } from './exercises/ex-reduce/ex-reduce.component';
 import { ExRandomsComponent } from './exercises/ex-randoms/ex-randoms.component';
 import { ExCountdownComponent } from './exercises/ex-countdown/ex-countdown.component';
 import { ExCombineComponent } from './exercises/ex-combine/ex-combine.component';
+import { ExLukeComponent } from './exercises/ex-luke/ex-luke.component';
 
 const routes: Routes = [
   {
@@ -105,6 +106,7 @@ const routes: Routes = [
          { path:'ex-randoms', component: ExRandomsComponent}, 
          { path:'ex-countdown', component: ExCountdownComponent}, 
          { path:'ex-combine', component: ExCombineComponent}, 
+         { path:'ex-luke', component: ExLukeComponent}, 
 
 
          { path:'**', redirectTo: 'home'},
