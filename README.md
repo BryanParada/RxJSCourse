@@ -2,6 +2,75 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
+## Features
+Check how Reactive Extensions works!
+
+
+## What did i use in this app?
+
+Observers
+* Subscriber
+* Unsubscribe
+* Subjects
+* Hot And Cold Observables
+* Chaining Observables
+* of
+* fromEvent
+* interval
+* timer
+* asyncScheduler
+  
+Operators:
+* map
+* pluck
+* mapTo
+* filter
+* tap
+* reduce
+* scan
+ 
+Not common Operators
+* take
+* first
+* takeWhile
+* takeUntil
+* skip
+* distinct
+* distinctUntilChanged
+* distinctUntilKeyChanged
+
+Time Operators
+* debounceTime
+* throttleTime
+* sampleTime
+* sample
+* auditTime
+
+
+RxJS focused in Ajax requests
+* basic concepts in ajax requests
+* Error handling
+* Fetch API
+* getJson
+* Ajax
+* Differences between getJson and Ajax
+* PUT, POST, DELETE, GET
+
+Transformation Operators
+* mergeAll
+* mergeMap
+* switchMap
+* concatMap
+* exhaustMap
+
+Combination Operators
+* startWith
+* endWith
+* concat
+* merge
+* combineLatest
+* forkJoin
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
