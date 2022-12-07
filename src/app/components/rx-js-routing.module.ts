@@ -40,6 +40,7 @@ import { StartwithEndwithComponent } from './combination/startwith-endwith/start
 import { ConcatComponent } from './combination/concat/concat.component';
 import { MergeComponent } from './combination/merge/merge.component';
 import { CombineLatestComponent } from './combination/combine-latest/combine-latest.component';
+import { ForkJoinComponent } from './combination/fork-join/fork-join.component';
 
 const routes: Routes = [
   {
@@ -92,6 +93,7 @@ const routes: Routes = [
          { path:'concat', component: ConcatComponent}, 
          { path:'merge', component: MergeComponent}, 
          { path:'combine-latest', component: CombineLatestComponent}, 
+         { path:'fork-join', component: ForkJoinComponent}, 
 
 
          { path:'**', redirectTo: 'home'},

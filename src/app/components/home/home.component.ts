@@ -65,6 +65,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/concat', text: 'Concat' }, 
     {route: '/rxJS/merge', text: 'Merge' }, 
     {route: '/rxJS/combine-latest', text: 'Combine Latest' }, 
+    {route: '/rxJS/fork-join', text: 'Fork Join' }, 
 
 
   ];
