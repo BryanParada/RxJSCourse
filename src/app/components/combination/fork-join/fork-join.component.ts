@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { of, interval, take, delay, forkJoin } from 'rxjs';
+import { of, interval, take, delay, forkJoin, catchError } from 'rxjs';
+import { ajax } from 'rxjs/ajax';
 
 @Component({
   selector: 'app-fork-join',
@@ -61,9 +62,25 @@ export class ForkJoinComponent implements OnInit {
 
     } )
 
+// --------------------------------------------------LAB FORKJOIN
+    const GITHUB_API_URL = 'https://api.github.com/users';
+    const GTIHUB_USER    = 'BryanParada'
 
-
-
+    forkJoin({
+      user: ajax.getJSON( 
+        `${GITHUB_API_URL}/${GTIHUB_USER}`
+      ),
+      repos: ajax.getJSON( 
+        `${GITHUB_API_URL}/${GTIHUB_USER}/reposFFFF`
+      ).pipe(
+        catchError( err => of([]))  
+      ),
+      gists: ajax.getJSON( 
+        `${GITHUB_API_URL}/${GTIHUB_USER}/gists`
+      ),
+    }).pipe(
+      catchError( err => of(err.message))
+    ).subscribe( console.log )
 
 
    }
