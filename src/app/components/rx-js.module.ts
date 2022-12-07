@@ -46,7 +46,8 @@ import { MergeComponent } from './combination/merge/merge.component';
 import { CombineLatestComponent } from './combination/combine-latest/combine-latest.component';
 import { ForkJoinComponent } from './combination/fork-join/fork-join.component';
 import { CapitalizeComponent } from './exercises/capitalize/capitalize.component';
-import { ExReduceComponent } from './exercises/ex-reduce/ex-reduce.component'; 
+import { ExReduceComponent } from './exercises/ex-reduce/ex-reduce.component';
+import { ExRandomsComponent } from './exercises/ex-randoms/ex-randoms.component'; 
 
 @NgModule({
   declarations: [
@@ -91,7 +92,7 @@ import { ExReduceComponent } from './exercises/ex-reduce/ex-reduce.component';
     MergeComponent,
     CombineLatestComponent,
     ForkJoinComponent, 
-    CapitalizeComponent, ExReduceComponent 
+    CapitalizeComponent, ExReduceComponent, ExRandomsComponent 
   ],
   imports: [ 
     RxJSRoutingModule,
