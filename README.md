@@ -29,7 +29,7 @@ Operators:
 * reduce
 * scan
  
-Not common Operators
+Uncommon Operators
 * take
 * first
 * takeWhile
