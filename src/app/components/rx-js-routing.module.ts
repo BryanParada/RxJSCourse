@@ -36,6 +36,7 @@ import { SwitchmapVsMergemapComponent } from './transformation/switchmap-vs-merg
 import { ConcatMapComponent } from './transformation/concat-map/concat-map.component';
 import { ExhaustMapComponent } from './transformation/exhaust-map/exhaust-map.component'; 
 import { FlatteningLabComponent } from './transformation/flattening-lab/flattening-lab.component';
+import { StartwithEndwithComponent } from './combination/startwith-endwith/startwith-endwith.component';
 
 const routes: Routes = [
   {
@@ -83,6 +84,8 @@ const routes: Routes = [
          { path:'concat-map', component: ConcatMapComponent}, 
          { path:'exhaust-map', component: ExhaustMapComponent}, 
          { path:'flattening-lab', component: FlatteningLabComponent}, 
+         //COMBINACION
+         { path:'start-end-with', component: StartwithEndwithComponent}, 
 
 
          { path:'**', redirectTo: 'home'},

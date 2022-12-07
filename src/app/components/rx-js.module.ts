@@ -39,7 +39,8 @@ import { SwitchMapComponent } from './transformation/switch-map/switch-map.compo
 import { SwitchmapVsMergemapComponent } from './transformation/switchmap-vs-mergemap/switchmap-vs-mergemap.component';
 import { ConcatMapComponent } from './transformation/concat-map/concat-map.component';
 import { ExhaustMapComponent } from './transformation/exhaust-map/exhaust-map.component'; 
-import { FlatteningLabComponent } from './transformation/flattening-lab/flattening-lab.component'; 
+import { FlatteningLabComponent } from './transformation/flattening-lab/flattening-lab.component';
+import { StartwithEndwithComponent } from './combination/startwith-endwith/startwith-endwith.component'; 
 
 @NgModule({
   declarations: [
@@ -78,7 +79,7 @@ import { FlatteningLabComponent } from './transformation/flattening-lab/flatteni
     SwitchmapVsMergemapComponent,
     ConcatMapComponent,
     ExhaustMapComponent, 
-    FlatteningLabComponent
+    FlatteningLabComponent, StartwithEndwithComponent
   ],
   imports: [ 
     RxJSRoutingModule,

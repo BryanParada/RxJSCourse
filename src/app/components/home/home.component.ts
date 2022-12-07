@@ -60,7 +60,8 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/concat-map', text: 'Concat Map' }, 
     {route: '/rxJS/exhaust-map', text: 'Exhaust Map' }, 
     {route: '/rxJS/flattening-lab', text: 'Flattening Lab' }, 
-
+    //COMBINACION
+    {route: '/rxJS/start-end-with', text: 'Start-End With' }, 
   ];
 
 
