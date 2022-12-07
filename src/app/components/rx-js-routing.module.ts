@@ -37,6 +37,7 @@ import { ConcatMapComponent } from './transformation/concat-map/concat-map.compo
 import { ExhaustMapComponent } from './transformation/exhaust-map/exhaust-map.component'; 
 import { FlatteningLabComponent } from './transformation/flattening-lab/flattening-lab.component';
 import { StartwithEndwithComponent } from './combination/startwith-endwith/startwith-endwith.component';
+import { ConcatComponent } from './combination/concat/concat.component';
 
 const routes: Routes = [
   {
@@ -86,6 +87,7 @@ const routes: Routes = [
          { path:'flattening-lab', component: FlatteningLabComponent}, 
          //COMBINACION
          { path:'start-end-with', component: StartwithEndwithComponent}, 
+         { path:'concat', component: ConcatComponent}, 
 
 
          { path:'**', redirectTo: 'home'},

@@ -62,6 +62,9 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/flattening-lab', text: 'Flattening Lab' }, 
     //COMBINACION
     {route: '/rxJS/start-end-with', text: 'Start-End With' }, 
+    {route: '/rxJS/concat', text: 'Concat' }, 
+
+
   ];
 
 
