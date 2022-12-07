@@ -63,6 +63,7 @@ export class HomeComponent implements OnInit {
     //COMBINACION
     {route: '/rxJS/start-end-with', text: 'Start-End With' }, 
     {route: '/rxJS/concat', text: 'Concat' }, 
+    {route: '/rxJS/merge', text: 'Merge' }, 
 
 
   ];
