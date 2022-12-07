@@ -44,6 +44,7 @@ import { ForkJoinComponent } from './combination/fork-join/fork-join.component';
 import { CapitalizeComponent } from './exercises/capitalize/capitalize.component';
 import { ExReduceComponent } from './exercises/ex-reduce/ex-reduce.component';
 import { ExRandomsComponent } from './exercises/ex-randoms/ex-randoms.component';
+import { ExCountdownComponent } from './exercises/ex-countdown/ex-countdown.component';
 
 const routes: Routes = [
   {
@@ -101,6 +102,7 @@ const routes: Routes = [
          { path:'capitalize', component: CapitalizeComponent}, 
          { path:'ex-reduce', component: ExReduceComponent}, 
          { path:'ex-randoms', component: ExRandomsComponent}, 
+         { path:'ex-countdown', component: ExCountdownComponent}, 
 
 
          { path:'**', redirectTo: 'home'},

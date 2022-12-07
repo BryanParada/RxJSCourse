@@ -70,6 +70,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/ex-capitalize', text: '01 - Capitalize' }, 
     {route: '/rxJS/ex-reduce', text: '02 - Reduce' }, 
     {route: '/rxJS/ex-randoms', text: '03 - Randoms' }, 
+    {route: '/rxJS/ex-countdown', text: '04 - Countdown' }, 
 
 
 
