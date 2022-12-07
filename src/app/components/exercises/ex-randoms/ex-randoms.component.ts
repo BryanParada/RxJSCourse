@@ -41,6 +41,7 @@ export class ExRandomsComponent implements OnInit {
       // Estos dos observables deben de emitir exactamente los mismos valores
       // reloj$.subscribe( val => console.log('obs1', val) );
       // reloj$.subscribe( val => console.log('obs2', val) );
+      
       subject$.subscribe( val => console.log('obs1', val) );
       subject$.subscribe( val => console.log('obs2', val) );
     
