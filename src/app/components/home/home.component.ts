@@ -67,7 +67,8 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/combine-latest', text: 'Combine Latest' }, 
     {route: '/rxJS/fork-join', text: 'Fork Join' }, 
     //EXERCISES
-    {route: '/rxJS/capitalize', text: '01 - Capitalize' }, 
+    {route: '/rxJS/ex-capitalize', text: '01 - Capitalize' }, 
+    {route: '/rxJS/ex-reduce', text: '02 - Reduce' }, 
 
 
 
