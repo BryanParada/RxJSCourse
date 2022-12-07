@@ -71,6 +71,7 @@ export class HomeComponent implements OnInit {
     {route: '/rxJS/ex-reduce', text: '02 - Reduce' }, 
     {route: '/rxJS/ex-randoms', text: '03 - Randoms' }, 
     {route: '/rxJS/ex-countdown', text: '04 - Countdown' }, 
+    {route: '/rxJS/ex-combine', text: '05 - Combine' }, 
 
 
 
